@@ -15,9 +15,12 @@ const Error = () => {
             Sorry,we couldn't find the page you're looking for
           </p>
 
-          <button className="px-6 py-2 bg-purple-400 text-white font-semibold rounded-lg hover:bg-blue-700 transition-all">
+          <Link
+            to="/"
+            className="px-6 py-2 bg-purple-400 text-white font-semibold rounded-lg hover:bg-blue-700 transition-all"
+          >
             Go Back Home
-          </button>
+          </Link>
         </div>
       </main>
     );

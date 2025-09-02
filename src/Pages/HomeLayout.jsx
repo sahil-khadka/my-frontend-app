@@ -1,12 +1,15 @@
 import { Outlet } from "react-router-dom";
-import Navbar from "../Components/Navbar";
+import { Header, Navbar } from "../Components";
+
 const HomeLayout = () => {
   return (
-    <div>
-      <h1 className="text-4xl font-bold text-red-500">Home Layout</h1>
+    <>
+      <Header />
       <Navbar />
-      <Outlet></Outlet>
-    </div>
+      <section className="align-element py-20">
+        <Outlet />
+      </section>
+    </>
   );
 };
 export default HomeLayout;

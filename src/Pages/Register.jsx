@@ -15,9 +15,8 @@ const Register = () => {
         <SubmitBtn text="REGISTER" />
 
         <p className="text-center">
-          Already a Member?{" "}
-          <Link to="/login" className="text-purple-900 hover:text-red-400">
-            {" "}
+          Already a Member?
+          <Link to="/login" className="text-purple-600 hover:text-red-400">
             Login
           </Link>
         </p>
