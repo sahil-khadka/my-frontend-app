@@ -9,7 +9,7 @@ const links = [
   { id: 6, url: "/orders", text: "Orders" },
 ];
 
-const NavLinks = ({ isDropdown = false }) => {
+const NavLinks = ({ isDropdown }) => {
   return (
     <>
       {links.map((link) => {
@@ -19,12 +19,12 @@ const NavLinks = ({ isDropdown = false }) => {
             <NavLink
               to={url}
               onClick={isDropdown ? () => setIsOpen(false) : ""}
-              className={`capitalize px-5 py-4 rounded transition-all hover:bg-red-700 flex
+              className={`capitalize px-5 py-4 rounded transition-all hover:bg-gray-400 flex
                 
                 ${
                   !isDropdown && text === "Cart"
-                    ? "bg-blue-600 text-white font-bold  hover:bg-gray-700"
-                    : "hover:text-blue-500"
+                    ? "bg-black h-15 w-25 flex items-center justify-center text-white font-bold  hover:bg-gray-200"
+                    : ""
                 }`}
             >
               {text}
